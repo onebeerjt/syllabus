@@ -14,6 +14,7 @@
   --mine: #1f6b4f;        /* "on a service you have" */
   --mine-bg: #dcefe5;
   --chip: #e3e7e4;
+  --imdb: #f5c518;        /* IMDb's own yellow, readable on both themes */
   --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
   --body: "Source Serif 4", Georgia, "Times New Roman", serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -72,6 +73,7 @@ section.unit { padding-block: 34px 6px }
 .badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px }
 .badge { font: 500 10.5px/1 var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 4px 6px; border-radius: 2px;
   border: 1px solid var(--ink); text-decoration: none; white-space: nowrap }
+.badge.imdb { background: var(--imdb); border-color: var(--imdb); color: #121212 }
 .badge.cc { background: var(--ink); color: var(--paper) }
 .badge.syl { border-color: var(--accent); color: var(--accent) }
 .because { font-size: 13.5px; color: var(--muted); grid-column: 2; min-width: 0 }
@@ -227,7 +229,7 @@ function card(p) {
     <div class="meta">
       <h3>${esc(p.t)}</h3>
       <div class="byline">${p.y} · ${esc(p.d)}</div>
-      <div class="badges">${p.cc ? `<span class="badge cc">Criterion #${p.cc}</span>` : ""}${syl}</div>
+      <div class="badges">${p.av.imdb ? `<a class="badge imdb" href="https://www.imdb.com/title/${esc(p.av.imdbId)}/" target="_blank" rel="noopener" title="${p.av.imdb.votes.toLocaleString()} IMDb votes">IMDb ${p.av.imdb.rating.toFixed(1)}</a>` : ""}${p.cc ? `<span class="badge cc">Criterion #${p.cc}</span>` : ""}${syl}</div>
     </div>
     <div class="because">Because you gave <b>${esc(p.because)}</b>${b ? ` <span class="stars">${stars(b.r)}</span>` : ""}</div>
     <p class="note">${esc(p.note)}</p>

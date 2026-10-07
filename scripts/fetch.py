@@ -2,7 +2,7 @@
 
 Usage: python3 scripts/fetch.py   -> writes data/availability.json and data/posters/
 """
-import base64, json, os, sys, time, urllib.request
+import base64, gzip, io, json, os, sys, time, urllib.request
 from datetime import datetime, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -12,7 +12,7 @@ QUERY = """
 query($f: TitleFilter, $c: Country!, $l: Language!) {
   popularTitles(country: $c, first: 5, filter: $f) {
     edges { node { id
-      content(country: $c, language: $l) { title originalReleaseYear fullPath posterUrl }
+      content(country: $c, language: $l) { title originalReleaseYear fullPath posterUrl externalIds { imdbId } }
       offers(country: $c, platform: WEB) {
         monetizationType retailPrice(language: $l) standardWebURL
         package { clearName technicalName }
@@ -44,6 +44,19 @@ def lookup(title, year):
                 if abs((n["content"]["originalReleaseYear"] or 0) - year) <= slack:
                     return n
     return None
+
+
+def imdb_ratings(ids):
+    """Ratings for the given tt ids from IMDb's free daily dataset (same source Consensus uses)."""
+    with urllib.request.urlopen("https://datasets.imdbws.com/title.ratings.tsv.gz", timeout=120) as r:
+        rows = gzip.open(io.BytesIO(r.read()), "rt", encoding="utf-8")
+        next(rows)  # header: tconst averageRating numVotes
+        out = {}
+        for line in rows:
+            tconst, rating, votes = line.rstrip("\n").split("\t")
+            if tconst in ids:
+                out[tconst] = {"rating": float(rating), "votes": int(votes)}
+        return out
 
 
 def offers(node):
@@ -86,9 +99,14 @@ def main():
             continue
         slug = node["content"]["fullPath"].rsplit("/", 1)[-1]
         result[key] = {"jw": "https://www.justwatch.com" + node["content"]["fullPath"],
+                       "imdbId": (node["content"].get("externalIds") or {}).get("imdbId"),
                        "offers": offers(node), "poster": poster(node, slug)}
         print(f"{key}: {len(result[key]['offers'])} offers")
         time.sleep(0.3)
+    ratings = imdb_ratings({v["imdbId"] for v in result.values() if v["imdbId"]})
+    for v in result.values():
+        v["imdb"] = ratings.get(v["imdbId"])
+    print(f"IMDb ratings: {sum(1 for v in result.values() if v['imdb'])} of {len(result)}")
     json.dump({"fetchedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                "country": COUNTRY, "titles": result},
               open(os.path.join(ROOT, "data", "availability.json"), "w"), ensure_ascii=False)
