@@ -182,12 +182,16 @@ DATA.picks.forEach(p => {
     const svc = SVC_OF[o.id];
     const kind = svc === "free" ? "free" : o.kind;
     // Subscriptions collapse to one chip per service; free and rental chips keep the store's own name.
+    // Within a service, the service's own app (first id in SERVICES) beats an Amazon/Roku/Apple channel copy.
     const byStore = kind !== "stream";
     const k = byStore ? o.id : (svc || o.id);
-    const name = byStore ? o.name.replace(/ ?(Amazon Channel|Player|Channel)$/, "") : (SVC_NAME[svc] || o.name);
-    const g = groups[kind];
-    if (!g[k] || (o.price && (!g[k].price || parseFloat(o.price.replace(/[^0-9.]/g, "")) < parseFloat(g[k].price.replace(/[^0-9.]/g, "")))))
-      g[k] = { name, url: o.url, svc, price: o.price };
+    const rank = svc ? SERVICES.find(s => s[0] === svc)[2].indexOf(o.id) : 0;
+    const via = rank > 0 && /^amazon/.test(o.id) ? " (via Prime Video)" : rank > 0 && /^rokuchannel/.test(o.id) ? " (via Roku)" : rank > 0 && /^appletv/.test(o.id) ? " (via Apple TV)" : "";
+    const name = byStore ? o.name.replace(/ ?(Amazon Channel|Player|Channel)$/, "") : (SVC_NAME[svc] || o.name) + via;
+    const g = groups[kind], cur = g[k];
+    const cheaper = cur && o.price && (!cur.price || parseFloat(o.price.replace(/[^0-9.]/g, "")) < parseFloat(cur.price.replace(/[^0-9.]/g, "")));
+    if (!cur || rank < cur.rank || (rank === cur.rank && cheaper))
+      g[k] = { name, url: o.url, svc, price: o.price, rank };
   });
   p.groups = groups;
   p.svcs = new Set([...Object.values(groups.stream), ...Object.values(groups.free)].map(o => o.svc).filter(Boolean));
