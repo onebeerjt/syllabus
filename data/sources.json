@@ -1,0 +1,9 @@
+{
+  "graz":     {"name": "Film Noir", "school": "University of Graz", "url": "https://static.uni-graz.at/fileadmin/gewi-institute/Amerikanistik/Dokumente/Syllabus_Noir.pdf"},
+  "bogazici": {"name": "FA 49K Film Noir (Fall 2023)", "school": "Boğaziçi University", "url": "https://westlanglit.bogazici.edu.tr/sites/westlanglit.boun.edu.tr/files/fa-49k-film-noir-syllabus-2023-fall.pdf"},
+  "gatech":   {"name": "LMC 3252 New Hollywood Now (Fall 2026)", "school": "Georgia Tech", "url": "https://syllabus.gatech.edu/sites/default/files/2026-04/LMC%203252%20Syllabus%2C%20New%20Hollywood%20Now%2C%20Fall%202026_0.pdf"},
+  "mit":      {"name": "Film Styles and Genres (Fall 2018)", "school": "MIT", "url": "https://lit.mit.edu/subject_term/film-styles-and-genres-fall-2018"},
+  "jcu":      {"name": "CMS/ITS 241 Italian Cinema", "school": "John Cabot University", "url": "https://myjcu.johncabot.edu/syllabus/syllabus_print.aspx?IDS=20132"},
+  "columbia": {"name": "Intro to the Study and Theory of Film", "school": "Columbia University", "url": "https://www1.columbia.edu/itc/film/engel/3001/course_syllabus.htm"},
+  "penn":     {"name": "CIMS 1020 World Film History 1945–Present", "school": "University of Pennsylvania", "url": "https://summer.sas.upenn.edu/sites/default/files/2024-04/CIMS-1020-920-syllabus.pdf"}
+}

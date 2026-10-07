@@ -1,0 +1,912 @@
+[
+{
+"n": 130,
+"t": "Fear and Loathing in Las Vegas",
+"y": 1998,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 129,
+"t": "The Big Lebowski",
+"y": 1998,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 128,
+"t": "True Romance",
+"y": 1993,
+"r": 4.5,
+"cc": false
+},
+{
+"n": 127,
+"t": "Bones and All",
+"y": 2022,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 126,
+"t": "Dressed to Kill",
+"y": 1980,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 125,
+"t": "Annie Hall",
+"y": 1977,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 124,
+"t": "Blood Simple",
+"y": 1984,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 123,
+"t": "Body Heat",
+"y": 1981,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 122,
+"t": "The Conversation",
+"y": 1974,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 121,
+"t": "Rumble Fish",
+"y": 1983,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 120,
+"t": "Basic Instinct",
+"y": 1992,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 119,
+"t": "How to Make a Killing",
+"y": 2026,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 118,
+"t": "Good Luck, Have Fun, Don't Die",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 117,
+"t": "Dog Day Afternoon",
+"y": 1975,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 116,
+"t": "Layer Cake",
+"y": 2004,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 115,
+"t": "The Favourite",
+"y": 2018,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 114,
+"t": "Good Luck, Have Fun, Don't Die",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 113,
+"t": "Portrait of a Lady on Fire",
+"y": 2019,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 112,
+"t": "Caught Stealing",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 111,
+"t": "Whatever Works",
+"y": 2009,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 110,
+"t": "The Talented Mr. Ripley",
+"y": 1999,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 109,
+"t": "Match Point",
+"y": 2005,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 108,
+"t": "Ex Machina",
+"y": 2015,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 107,
+"t": "Vanilla Sky",
+"y": 2001,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 106,
+"t": "Vicky Cristina Barcelona",
+"y": 2008,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 105,
+"t": "Shiva Baby",
+"y": 2020,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 104,
+"t": "After Hours",
+"y": 1985,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 103,
+"t": "Bugonia",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 102,
+"t": "If I Had Legs I'd Kick You",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 101,
+"t": "The Smashing Machine",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 100,
+"t": "No Country for Old Men",
+"y": 2007,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 99,
+"t": "Sinners",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 98,
+"t": "Marty Supreme",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 97,
+"t": "Licorice Pizza",
+"y": 2021,
+"r": 4.5,
+"cc": false
+},
+{
+"n": 96,
+"t": "Molly's Game",
+"y": 2017,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 95,
+"t": "Friendship",
+"y": 2024,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 94,
+"t": "No Other Choice",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 93,
+"t": "When Harry Met Sally...",
+"y": 1989,
+"r": 4.5,
+"cc": false
+},
+{
+"n": 92,
+"t": "Materialists",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 91,
+"t": "Lock, Stock and Two Smoking Barrels",
+"y": 1998,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 90,
+"t": "Snatch",
+"y": 2000,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 89,
+"t": "Snatch",
+"y": 2000,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 88,
+"t": "Zombieland: Double Tap",
+"y": 2019,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 87,
+"t": "Zombieland",
+"y": 2009,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 86,
+"t": "Bullet Train",
+"y": 2022,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 85,
+"t": "The Getaway",
+"y": 1972,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 84,
+"t": "Wake in Fright",
+"y": 1971,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 83,
+"t": "The Housemaid",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 82,
+"t": "The Taking of Pelham One Two Three",
+"y": 1974,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 81,
+"t": "The Silent Partner",
+"y": 1978,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 80,
+"t": "Cutter's Way",
+"y": 1981,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 79,
+"t": "California Split",
+"y": 1974,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 78,
+"t": "Body Double",
+"y": 1984,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 77,
+"t": "Badlands",
+"y": 1973,
+"r": 3.0,
+"cc": true
+},
+{
+"n": 76,
+"t": "Switchblade Sisters",
+"y": 1975,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 75,
+"t": "Faster, Pussycat! Kill! Kill!",
+"y": 1965,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 74,
+"t": "One Battle After Another",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 73,
+"t": "The Long Goodbye",
+"y": 1973,
+"r": 2.5,
+"cc": false
+},
+{
+"n": 72,
+"t": "One Battle After Another",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 71,
+"t": "Marty Supreme",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 70,
+"t": "The Housemaid",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 69,
+"t": "Kill Bill: The Whole Bloody Affair",
+"y": 2006,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 68,
+"t": "Wild at Heart",
+"y": 1990,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 67,
+"t": "Gun Crazy",
+"y": 1950,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 66,
+"t": "Licorice Pizza",
+"y": 2021,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 65,
+"t": "True Romance",
+"y": 1993,
+"r": 4.5,
+"cc": false
+},
+{
+"n": 64,
+"t": "Natural Born Killers",
+"y": 1994,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 63,
+"t": "Go",
+"y": 1999,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 62,
+"t": "The Social Network",
+"y": 2010,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 61,
+"t": "The Rules of Attraction",
+"y": 2002,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 60,
+"t": "Spring Breakers",
+"y": 2012,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 59,
+"t": "Magnolia",
+"y": 1999,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 58,
+"t": "Closer",
+"y": 2004,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 57,
+"t": "Bugonia",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 56,
+"t": "Kick-Ass",
+"y": 2010,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 55,
+"t": "HIM",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 54,
+"t": "Punch-Drunk Love",
+"y": 2002,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 53,
+"t": "Boogie Nights",
+"y": 1997,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 52,
+"t": "The Fantastic 4: First Steps",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 51,
+"t": "Superman",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 50,
+"t": "F1",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 49,
+"t": "Eddington",
+"y": 2025,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 48,
+"t": "The Phoenician Scheme",
+"y": 2025,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 47,
+"t": "Friendship",
+"y": 2024,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 46,
+"t": "Eyes Wide Shut",
+"y": 1999,
+"r": 4.5,
+"cc": true
+},
+{
+"n": 45,
+"t": "Warfare",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 44,
+"t": "Anchorman: The Legend of Ron Burgundy",
+"y": 2004,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 43,
+"t": "Red River",
+"y": 1948,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 42,
+"t": "Get Shorty",
+"y": 1995,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 41,
+"t": "Stagecoach",
+"y": 1939,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 40,
+"t": "The King of Comedy",
+"y": 1982,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 39,
+"t": "Adventureland",
+"y": 2009,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 38,
+"t": "Rounders",
+"y": 1998,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 37,
+"t": "Rosemary's Baby",
+"y": 1968,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 36,
+"t": "Sinners",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 35,
+"t": "Chinatown",
+"y": 1974,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 34,
+"t": "Tropic Thunder",
+"y": 2008,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 33,
+"t": "Zoolander",
+"y": 2001,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 32,
+"t": "Swingers",
+"y": 1996,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 31,
+"t": "Jerry Maguire",
+"y": 1996,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 30,
+"t": "Gangs of New York",
+"y": 2002,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 29,
+"t": "The Godfather",
+"y": 1972,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 28,
+"t": "The Godfather Part II",
+"y": 1974,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 27,
+"t": "Minority Report",
+"y": 2002,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 26,
+"t": "Vanilla Sky",
+"y": 2001,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 25,
+"t": "The Irishman",
+"y": 2019,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 24,
+"t": "Moon",
+"y": 2009,
+"r": 3.5,
+"cc": false
+},
+{
+"n": 23,
+"t": "To Live and Die in L.A.",
+"y": 1985,
+"r": 3.0,
+"cc": false
+},
+{
+"n": 22,
+"t": "Mickey 17",
+"y": 2025,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 21,
+"t": "Anora",
+"y": 2024,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 20,
+"t": "Juliet of the Spirits",
+"y": 1965,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 19,
+"t": "Nights of Cabiria",
+"y": 1957,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 18,
+"t": "Taxi Driver",
+"y": 1976,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 17,
+"t": "La Strada",
+"y": 1954,
+"r": 3.0,
+"cc": true
+},
+{
+"n": 16,
+"t": "La Dolce Vita",
+"y": 1960,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 15,
+"t": "The White Sheik",
+"y": 1952,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 14,
+"t": "Persona",
+"y": 1966,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 13,
+"t": "Mulholland Drive",
+"y": 2001,
+"r": 3.5,
+"cc": true
+},
+{
+"n": 12,
+"t": "8½",
+"y": 1963,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 11,
+"t": "Memento",
+"y": 2000,
+"r": 4.0,
+"cc": false
+},
+{
+"n": 10,
+"t": "Rashomon",
+"y": 1950,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 9,
+"t": "The Killing of a Chinese Bookie",
+"y": 1976,
+"r": 3.0,
+"cc": true
+},
+{
+"n": 8,
+"t": "I Vitelloni",
+"y": 1953,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 7,
+"t": "The Killing",
+"y": 1956,
+"r": 4.0,
+"cc": true
+},
+{
+"n": 6,
+"t": "The Lobster",
+"y": 2015,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 5,
+"t": "Napoleon",
+"y": 2023,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 4,
+"t": "Ex Machina",
+"y": 2015,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 3,
+"t": "L.A. Confidential",
+"y": 1997,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 2,
+"t": "Lost in Translation",
+"y": 2003,
+"r": 5.0,
+"cc": false
+},
+{
+"n": 1,
+"t": "Her",
+"y": 2013,
+"r": 5.0,
+"cc": false
+}
+]

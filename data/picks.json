@@ -1,0 +1,829 @@
+[
+ {
+  "t": "Double Indemnity",
+  "y": 1944,
+  "d": "Billy Wilder",
+  "cc": 1126,
+  "src": [
+   "graz",
+   "bogazici",
+   "columbia"
+  ],
+  "shelf": "noir",
+  "because": "Body Heat",
+  "note": "Body Heat is basically a remake of this one. Three different courses open their noir unit with it."
+ },
+ {
+  "t": "Detour",
+  "y": 1945,
+  "d": "Edgar G. Ulmer",
+  "cc": 966,
+  "src": [
+   "graz",
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "Blood Simple",
+  "note": "A 68-minute poverty-row nightmare. Plenty of bad luck and dumb decisions, like the Coens' debut."
+ },
+ {
+  "t": "The Asphalt Jungle",
+  "y": 1950,
+  "d": "John Huston",
+  "cc": 847,
+  "src": [
+   "graz",
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "The Killing",
+  "note": "The heist film that The Killing, Rififi and Ocean's all descend from."
+ },
+ {
+  "t": "Kiss Me Deadly",
+  "y": 1955,
+  "d": "Robert Aldrich",
+  "cc": 568,
+  "src": [
+   "graz",
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "L.A. Confidential",
+  "note": "A brutal L.A. private-eye story that ends somewhere nobody expects."
+ },
+ {
+  "t": "The Big Heat",
+  "y": 1953,
+  "d": "Fritz Lang",
+  "cc": 1269,
+  "src": [
+   "graz"
+  ],
+  "shelf": "noir",
+  "because": "L.A. Confidential",
+  "note": "A cop against a corrupt city, with the coffee-pot scene everyone remembers."
+ },
+ {
+  "t": "Night and the City",
+  "y": 1950,
+  "d": "Jules Dassin",
+  "cc": 274,
+  "src": [
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "Marty Supreme",
+  "note": "Richard Widmark as a London hustler sprinting from one scheme to the next. The ancestor of the Safdies."
+ },
+ {
+  "t": "M",
+  "y": 1931,
+  "d": "Fritz Lang",
+  "cc": 30,
+  "src": [
+   "bogazici",
+   "columbia"
+  ],
+  "shelf": "noir",
+  "because": "Taxi Driver",
+  "note": "The first great serial-killer film, and where most noir syllabi start."
+ },
+ {
+  "t": "Scarface",
+  "y": 1932,
+  "d": "Howard Hawks",
+  "cc": 1239,
+  "src": [
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "The Godfather",
+  "note": "The original gangster picture, much wilder than its reputation."
+ },
+ {
+  "t": "Gilda",
+  "y": 1946,
+  "d": "Charles Vidor",
+  "cc": 795,
+  "src": [
+   "graz"
+  ],
+  "shelf": "noir",
+  "because": "Basic Instinct",
+  "note": "Rita Hayworth's femme fatale, the template Basic Instinct plays with."
+ },
+ {
+  "t": "The Killers",
+  "y": 1946,
+  "d": "Robert Siodmak",
+  "cc": null,
+  "src": [
+   "graz",
+   "bogazici"
+  ],
+  "shelf": "noir",
+  "because": "Layer Cake",
+  "note": "A Hemingway story stretched into a flashback puzzle about a boxer who stops running. Criterion pairs it with Don Siegel's 1964 version."
+ },
+ {
+  "t": "Mean Streets",
+  "y": 1973,
+  "d": "Martin Scorsese",
+  "cc": 1198,
+  "src": [
+   "gatech",
+   "mit"
+  ],
+  "shelf": "newhollywood",
+  "because": "Taxi Driver",
+  "note": "Scorsese and De Niro's first time out together. Little Italy, debts and the Ronettes."
+ },
+ {
+  "t": "Five Easy Pieces",
+  "y": 1970,
+  "d": "Bob Rafelson",
+  "cc": 546,
+  "src": [
+   "gatech",
+   "mit"
+  ],
+  "shelf": "newhollywood",
+  "because": "Rumble Fish",
+  "note": "Jack Nicholson walking out on everything. Includes the chicken-salad-sandwich scene."
+ },
+ {
+  "t": "Klute",
+  "y": 1971,
+  "d": "Alan J. Pakula",
+  "cc": 987,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "The Conversation",
+  "note": "First of Pakula's paranoia trilogy. Jane Fonda is incredible in it."
+ },
+ {
+  "t": "The Parallax View",
+  "y": 1974,
+  "d": "Alan J. Pakula",
+  "cc": 1064,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "The Conversation",
+  "note": "A political-assassination conspiracy shot like an architectural nightmare. Pairs perfectly with The Conversation."
+ },
+ {
+  "t": "Nashville",
+  "y": 1975,
+  "d": "Robert Altman",
+  "cc": 683,
+  "src": [
+   "gatech",
+   "mit"
+  ],
+  "shelf": "newhollywood",
+  "because": "Magnolia",
+  "note": "Twenty-four characters in one city over five days. The film PTA was chasing with Magnolia."
+ },
+ {
+  "t": "Mikey and Nicky",
+  "y": 1976,
+  "d": "Elaine May",
+  "cc": 957,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "The Killing of a Chinese Bookie",
+  "note": "Cassavetes and Peter Falk over one long night with a hit out on one of them."
+ },
+ {
+  "t": "Network",
+  "y": 1976,
+  "d": "Sidney Lumet",
+  "cc": 1300,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "Dog Day Afternoon",
+  "note": "Lumet's next film after Dog Day. \"Mad as hell\" and still unnervingly current."
+ },
+ {
+  "t": "The French Connection",
+  "y": 1971,
+  "d": "William Friedkin",
+  "cc": null,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "To Live and Die in L.A.",
+  "note": "Friedkin's first cop film, with the car chase To Live and Die in L.A. tried to top."
+ },
+ {
+  "t": "Barry Lyndon",
+  "y": 1975,
+  "d": "Stanley Kubrick",
+  "cc": 897,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "Napoleon",
+  "note": "Candlelit Kubrick, and the period epic Ridley Scott's Napoleon keeps glancing at."
+ },
+ {
+  "t": "The Last Picture Show",
+  "y": 1971,
+  "d": "Peter Bogdanovich",
+  "cc": 549,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "Licorice Pizza",
+  "note": "A small Texas town in 1951 and the kids growing up in it. Bittersweet hangout movie."
+ },
+ {
+  "t": "Midnight Cowboy",
+  "y": 1969,
+  "d": "John Schlesinger",
+  "cc": 925,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "Taxi Driver",
+  "note": "Grimy late-60s New York and the only X-rated Best Picture winner."
+ },
+ {
+  "t": "McCabe & Mrs. Miller",
+  "y": 1971,
+  "d": "Robert Altman",
+  "cc": 827,
+  "src": [
+   "gatech"
+  ],
+  "shelf": "newhollywood",
+  "because": "Red River",
+  "note": "A western stripped of every western myth, set to Leonard Cohen songs."
+ },
+ {
+  "t": "Apocalypse Now",
+  "y": 1979,
+  "d": "Francis Ford Coppola",
+  "cc": null,
+  "src": [
+   "penn"
+  ],
+  "shelf": "newhollywood",
+  "because": "The Godfather Part II",
+  "note": "Coppola right after the two Godfathers, both of which you gave five stars."
+ },
+ {
+  "t": "Thief",
+  "y": 1981,
+  "d": "Michael Mann",
+  "cc": 691,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Body Heat",
+  "note": "Mann's debut: James Caan as a safecracker, scored by Tangerine Dream. The blueprint for Heat."
+ },
+ {
+  "t": "Blow Out",
+  "y": 1981,
+  "d": "Brian De Palma",
+  "cc": 562,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "The Conversation",
+  "note": "De Palma's version of The Conversation. Given your Dressed to Kill and Body Double ratings, this is his best."
+ },
+ {
+  "t": "Night Moves",
+  "y": 1975,
+  "d": "Arthur Penn",
+  "cc": 1255,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Chinatown",
+  "note": "Gene Hackman as a burned-out P.I. on a case that keeps slipping away from him."
+ },
+ {
+  "t": "The Friends of Eddie Coyle",
+  "y": 1973,
+  "d": "Peter Yates",
+  "cc": 475,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "The Silent Partner",
+  "note": "Robert Mitchum as a small-time Boston hood who knows he's out of moves."
+ },
+ {
+  "t": "Point Blank",
+  "y": 1967,
+  "d": "John Boorman",
+  "cc": 1306,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "The Getaway",
+  "note": "Lee Marvin wants his $93,000 back. Pop-art revenge that bridges classic noir and the 70s."
+ },
+ {
+  "t": "Sorcerer",
+  "y": 1977,
+  "d": "William Friedkin",
+  "cc": 1267,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "To Live and Die in L.A.",
+  "note": "Four desperate men driving nitroglycerin through the jungle. The rope-bridge scene is unreal."
+ },
+ {
+  "t": "Miller's Crossing",
+  "y": 1990,
+  "d": "Joel Coen",
+  "cc": 1112,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Blood Simple",
+  "note": "The Coens' gangster film: hats, double-crosses and \"What's the rumpus?\""
+ },
+ {
+  "t": "The Man Who Wasn't There",
+  "y": 2001,
+  "d": "Joel Coen",
+  "cc": 1301,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "No Country for Old Men",
+  "note": "A black-and-white Cain pastiche about a barber in over his head."
+ },
+ {
+  "t": "The Grifters",
+  "y": 1990,
+  "d": "Stephen Frears",
+  "cc": 1246,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Body Heat",
+  "note": "Con artists, a mother and a son. Anjelica Huston is terrifying."
+ },
+ {
+  "t": "Bound",
+  "y": 1996,
+  "d": "The Wachowskis",
+  "cc": 1220,
+  "src": [
+   "graz"
+  ],
+  "shelf": "neonoir",
+  "because": "Basic Instinct",
+  "note": "A tight, sexy apartment-heist noir from before The Matrix."
+ },
+ {
+  "t": "Raging Bull",
+  "y": 1980,
+  "d": "Martin Scorsese",
+  "cc": 1134,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "The Smashing Machine",
+  "note": "The fighter biopic every fighter biopic since is measured against."
+ },
+ {
+  "t": "Gone Girl",
+  "y": 2014,
+  "d": "David Fincher",
+  "cc": null,
+  "src": [
+   "bogazici"
+  ],
+  "shelf": "neonoir",
+  "because": "Basic Instinct",
+  "note": "Where a noir course ends up: the femme fatale updated for cable news."
+ },
+ {
+  "t": "A History of Violence",
+  "y": 2005,
+  "d": "David Cronenberg",
+  "cc": 1283,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "No Country for Old Men",
+  "note": "A small-town diner owner with a past. Lean and nasty."
+ },
+ {
+  "t": "Le samouraï",
+  "y": 1967,
+  "d": "Jean-Pierre Melville",
+  "cc": 306,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Taxi Driver",
+  "note": "Alain Delon as the coolest hitman ever filmed: a loner with a code, a trench coat and a tiny apartment. Mann, Jarmusch and Refn all borrowed from it."
+ },
+ {
+  "t": "Rififi",
+  "y": 1955,
+  "d": "Jules Dassin",
+  "cc": 115,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "The Killing",
+  "note": "A silent, 30-minute heist sequence that is still the best ever filmed."
+ },
+ {
+  "t": "Collateral",
+  "y": 2004,
+  "d": "Michael Mann",
+  "cc": null,
+  "src": [],
+  "shelf": "neonoir",
+  "because": "Vanilla Sky",
+  "note": "You keep rating Tom Cruise films highly. This is his best villain, in Mann's digital L.A."
+ },
+ {
+  "t": "Rome Open City",
+  "y": 1945,
+  "d": "Roberto Rossellini",
+  "cc": 497,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "La Dolce Vita",
+  "note": "Fellini co-wrote it. Neorealism starts here, shot in Rome's streets right after the occupation."
+ },
+ {
+  "t": "Bicycle Thieves",
+  "y": 1948,
+  "d": "Vittorio De Sica",
+  "cc": 374,
+  "src": [
+   "jcu",
+   "columbia",
+   "penn"
+  ],
+  "shelf": "italian",
+  "because": "Nights of Cabiria",
+  "note": "On three of these syllabi. A father, a son and a stolen bike."
+ },
+ {
+  "t": "Big Deal on Madonna Street",
+  "y": 1958,
+  "d": "Mario Monicelli",
+  "cc": 113,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "Lock, Stock and Two Smoking Barrels",
+  "note": "Hopeless crooks bungling a heist. Guy Ritchie's whole genre in 1958 Rome."
+ },
+ {
+  "t": "Amarcord",
+  "y": 1973,
+  "d": "Federico Fellini",
+  "cc": 4,
+  "src": [],
+  "shelf": "italian",
+  "because": "I Vitelloni",
+  "note": "Fellini's memory film of his hometown. Criterion spine #4, and the obvious next step after your Fellini run."
+ },
+ {
+  "t": "Il sorpasso",
+  "y": 1962,
+  "d": "Dino Risi",
+  "cc": 707,
+  "src": [],
+  "shelf": "italian",
+  "because": "La Dolce Vita",
+  "note": "A loudmouth and a shy student on a road trip in a convertible. Commedia all'italiana at its best."
+ },
+ {
+  "t": "L'eclisse",
+  "y": 1962,
+  "d": "Michelangelo Antonioni",
+  "cc": 278,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "La Dolce Vita",
+  "note": "Monica Vitti, the Rome stock exchange and the most famous ending in Italian film."
+ },
+ {
+  "t": "Investigation of a Citizen Above Suspicion",
+  "y": 1970,
+  "d": "Elio Petri",
+  "cc": 682,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "The Conversation",
+  "note": "A police chief kills his mistress and dares the system to catch him. Oscar winner with a Morricone score."
+ },
+ {
+  "t": "The Conformist",
+  "y": 1970,
+  "d": "Bernardo Bertolucci",
+  "cc": null,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "The Godfather",
+  "note": "A fascist spy in 1930s Paris, shot by Vittorio Storaro, who later shot Apocalypse Now. Coppola's crowd studied it frame by frame."
+ },
+ {
+  "t": "Mamma Roma",
+  "y": 1962,
+  "d": "Pier Paolo Pasolini",
+  "cc": 236,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "Nights of Cabiria",
+  "note": "Anna Magnani as a former sex worker trying to go straight for her son. Cabiria's tougher sister."
+ },
+ {
+  "t": "The Hand of God",
+  "y": 2021,
+  "d": "Paolo Sorrentino",
+  "cc": null,
+  "src": [
+   "jcu"
+  ],
+  "shelf": "italian",
+  "because": "8½",
+  "note": "Sorrentino's own Amarcord: Naples, Maradona and becoming a filmmaker."
+ },
+ {
+  "t": "Breathless",
+  "y": 1960,
+  "d": "Jean-Luc Godard",
+  "cc": 408,
+  "src": [
+   "columbia",
+   "penn"
+  ],
+  "shelf": "world",
+  "because": "True Romance",
+  "note": "Lovers on the run, jump cuts and Bogart worship. The French New Wave's opening shot."
+ },
+ {
+  "t": "Cléo from 5 to 7",
+  "y": 1962,
+  "d": "Agnès Varda",
+  "cc": 73,
+  "src": [
+   "columbia"
+  ],
+  "shelf": "world",
+  "because": "Lost in Translation",
+  "note": "A singer drifting through Paris for two hours, nearly in real time, waiting on test results."
+ },
+ {
+  "t": "In the Mood for Love",
+  "y": 2000,
+  "d": "Wong Kar Wai",
+  "cc": 147,
+  "src": [],
+  "shelf": "world",
+  "because": "Lost in Translation",
+  "note": "Two neighbors falling in love and refusing to act on it. The great unconsummated-romance movie."
+ },
+ {
+  "t": "Chungking Express",
+  "y": 1994,
+  "d": "Wong Kar Wai",
+  "cc": 453,
+  "src": [],
+  "shelf": "world",
+  "because": "Her",
+  "note": "Lonely cops in neon Hong Kong, plus \"California Dreamin'\" on repeat."
+ },
+ {
+  "t": "High and Low",
+  "y": 1963,
+  "d": "Akira Kurosawa",
+  "cc": 24,
+  "src": [],
+  "shelf": "world",
+  "because": "Rashomon",
+  "note": "A kidnapping thriller split cleanly in half: a boardroom drama, then a police procedural."
+ },
+ {
+  "t": "Red Desert",
+  "y": 1964,
+  "d": "Michelangelo Antonioni",
+  "cc": 522,
+  "src": [
+   "penn"
+  ],
+  "shelf": "world",
+  "because": "Persona",
+  "note": "Antonioni's first color film. Industrial Ravenna painted like a breakdown."
+ },
+ {
+  "t": "Close-Up",
+  "y": 1990,
+  "d": "Abbas Kiarostami",
+  "cc": 519,
+  "src": [
+   "penn"
+  ],
+  "shelf": "world",
+  "because": "8½",
+  "note": "A real man who impersonated a director, re-enacting his own trial. Unlike anything else."
+ },
+ {
+  "t": "Parasite",
+  "y": 2019,
+  "d": "Bong Joon Ho",
+  "cc": 1054,
+  "src": [],
+  "shelf": "world",
+  "because": "Bugonia",
+  "note": "Class war as a home-invasion thriller. If you somehow haven't seen it, start here."
+ },
+ {
+  "t": "The Housemaid",
+  "y": 1960,
+  "d": "Kim Ki-young",
+  "cc": 690,
+  "src": [],
+  "shelf": "world",
+  "because": "The Housemaid",
+  "note": "You logged The Housemaid (2025) twice. This is the Korean original Bong cites as Parasite's ancestor."
+ },
+ {
+  "t": "Being John Malkovich",
+  "y": 1999,
+  "d": "Spike Jonze",
+  "cc": 611,
+  "src": [],
+  "shelf": "now",
+  "because": "Her",
+  "note": "Spike Jonze's first feature. If Her is a five, this is required."
+ },
+ {
+  "t": "Marie Antoinette",
+  "y": 2006,
+  "d": "Sofia Coppola",
+  "cc": 1335,
+  "src": [],
+  "shelf": "now",
+  "because": "Lost in Translation",
+  "note": "Sofia Coppola's pastel punk period piece. Pairs well with The Favourite."
+ },
+ {
+  "t": "The Virgin Suicides",
+  "y": 1999,
+  "d": "Sofia Coppola",
+  "cc": 920,
+  "src": [],
+  "shelf": "now",
+  "because": "Lost in Translation",
+  "note": "Coppola's debut: hazy 70s suburbia and an Air soundtrack."
+ },
+ {
+  "t": "Uncut Gems",
+  "y": 2019,
+  "d": "Josh & Benny Safdie",
+  "cc": 1101,
+  "src": [],
+  "shelf": "now",
+  "because": "Marty Supreme",
+  "note": "Marty Supreme's older, more panic-stricken brother."
+ },
+ {
+  "t": "Blue Velvet",
+  "y": 1986,
+  "d": "David Lynch",
+  "cc": 977,
+  "src": [],
+  "shelf": "now",
+  "because": "Wild at Heart",
+  "note": "Lynch's suburban noir. The Lynch to watch after Mulholland Dr. and Wild at Heart."
+ },
+ {
+  "t": "Lost Highway",
+  "y": 1997,
+  "d": "David Lynch",
+  "cc": 1152,
+  "src": [],
+  "shelf": "now",
+  "because": "Mulholland Drive",
+  "note": "A dry run for Mulholland Dr.'s identity swap, played as a hard-rock noir."
+ },
+ {
+  "t": "The Game",
+  "y": 1997,
+  "d": "David Fincher",
+  "cc": 627,
+  "src": [],
+  "shelf": "now",
+  "because": "Vanilla Sky",
+  "note": "A rich man's reality starts glitching. Same itch as Vanilla Sky."
+ },
+ {
+  "t": "Following",
+  "y": 1998,
+  "d": "Christopher Nolan",
+  "cc": 638,
+  "src": [],
+  "shelf": "now",
+  "because": "Memento",
+  "note": "Nolan's $6,000 debut, a scrambled-timeline noir that came right before Memento."
+ },
+ {
+  "t": "Anatomy of a Fall",
+  "y": 2023,
+  "d": "Justine Triet",
+  "cc": 1218,
+  "src": [],
+  "shelf": "now",
+  "because": "Portrait of a Lady on Fire",
+  "note": "A courtroom drama that keeps you arguing about it for a week."
+ },
+ {
+  "t": "Dogtooth",
+  "y": 2009,
+  "d": "Yorgos Lanthimos",
+  "cc": null,
+  "src": [],
+  "shelf": "now",
+  "because": "The Lobster",
+  "note": "Lanthimos at his strangest. The Lobster got five stars, so this is next."
+ },
+ {
+  "t": "The Killing of a Sacred Deer",
+  "y": 2017,
+  "d": "Yorgos Lanthimos",
+  "cc": null,
+  "src": [],
+  "shelf": "now",
+  "because": "The Lobster",
+  "note": "Lanthimos plus Colin Farrell again, this time as a Greek tragedy in a hospital."
+ },
+ {
+  "t": "Inherent Vice",
+  "y": 2014,
+  "d": "Paul Thomas Anderson",
+  "cc": null,
+  "src": [],
+  "shelf": "now",
+  "because": "The Big Lebowski",
+  "note": "PTA's stoner P.I. movie: The Long Goodbye run through Lebowski."
+ },
+ {
+  "t": "The Master",
+  "y": 2012,
+  "d": "Paul Thomas Anderson",
+  "cc": null,
+  "src": [],
+  "shelf": "now",
+  "because": "Boogie Nights",
+  "note": "The PTA you haven't logged yet. Phoenix and Hoffman at full power."
+ },
+ {
+  "t": "Withnail and I",
+  "y": 1987,
+  "d": "Bruce Robinson",
+  "cc": 119,
+  "src": [],
+  "shelf": "now",
+  "because": "Fear and Loathing in Las Vegas",
+  "note": "Two out-of-work actors on a disastrous country bender. A British cousin of Fear and Loathing."
+ },
+ {
+  "t": "Something Wild",
+  "y": 1986,
+  "d": "Jonathan Demme",
+  "cc": 563,
+  "src": [],
+  "shelf": "now",
+  "because": "After Hours",
+  "note": "A yuppie gets kidnapped by Melanie Griffith, and then it turns. Same year-of-chaos energy as After Hours."
+ },
+ {
+  "t": "Risky Business",
+  "y": 1983,
+  "d": "Paul Brickman",
+  "cc": 1227,
+  "src": [],
+  "shelf": "now",
+  "because": "Jerry Maguire",
+  "note": "Your Cruise run is real: Vanilla Sky, Minority Report, Jerry Maguire, Eyes Wide Shut. This is where it started."
+ }
+]

@@ -1,0 +1,314 @@
+<title>JT's Syllabus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a course reader. Units down the page, each a grid of index cards; a sticky filter bar acts as the registrar's desk. */
+:root {
+  --paper: #eef0ee;
+  --card: #fbfcfa;
+  --ink: #1a2230;
+  --muted: #5b6474;
+  --rule: #cfd5d2;
+  --accent: #b8321f;      /* registrar's red pencil */
+  --accent-ink: #ffffff;
+  --mine: #1f6b4f;        /* "on a service you have" */
+  --mine-bg: #dcefe5;
+  --chip: #e3e7e4;
+  --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #12161d; --card: #1a2029; --ink: #e8ebe9; --muted: #9aa3b1; --rule: #2c3440;
+  --accent: #ff7a5c; --accent-ink: #1a1010; --mine: #7fd6ac; --mine-bg: #183a2c; --chip: #252c37; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #12161d; --card: #1a2029; --ink: #e8ebe9; --muted: #9aa3b1; --rule: #2c3440;
+  --accent: #ff7a5c; --accent-ink: #1a1010; --mine: #7fd6ac; --mine-bg: #183a2c; --chip: #252c37; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--paper); color: var(--ink); font: 16px/1.5 var(--body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+a { color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+
+header.top { display: grid; gap: 14px; padding-block-end: 18px; border-bottom: 2px solid var(--ink) }
+.course { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted) }
+h1 { font: 800 clamp(48px, 9vw, 104px)/.86 var(--display); margin: 0; letter-spacing: -.01em; text-transform: uppercase; text-wrap: balance }
+h1 em { font-style: normal; color: var(--accent) }
+.lede { max-width: 62ch; margin: 0; font-size: 17px }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 13px/1.3 var(--mono); color: var(--muted) }
+.refresh { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font: 13px var(--mono); color: var(--muted) }
+.refresh .tog { text-decoration: none }
+.facts b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums }
+
+.desk { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper);
+  display: grid; gap: 10px; padding-block: 14px; border-bottom: 1px solid var(--rule) }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center }
+.label { font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 4px; min-width: 76px }
+.tog { font: 500 13px/1 var(--mono); border: 1px solid var(--rule); background: var(--card); color: var(--ink);
+  padding: 7px 10px; border-radius: 3px; cursor: pointer }
+.tog[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink) }
+.svc[aria-pressed="true"] { background: var(--mine); border-color: var(--mine); color: var(--card) }
+.count { margin-left: auto; font: 13px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.desk details summary { cursor: pointer; font: 500 12px var(--mono); color: var(--muted); list-style: none }
+.desk details summary::-webkit-details-marker { display: none }
+
+section.unit { padding-block: 34px 6px }
+.unit-head { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: baseline; margin-bottom: 16px }
+.unit-no { font: 800 15px/1 var(--display); color: var(--accent); letter-spacing: .08em; text-transform: uppercase }
+.unit h2 { font: 800 clamp(30px, 4.6vw, 44px)/1 var(--display); margin: 0; text-transform: uppercase; grid-column: 1 / -1 }
+.unit-blurb { grid-column: 1 / -1; margin: 0; max-width: 70ch; color: var(--muted); font-style: italic }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px }
+@media (max-width: 420px) { .grid { grid-template-columns: 1fr } }
+.film { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 14px;
+  display: grid; grid-template-columns: 88px 1fr; gap: 6px 14px; align-content: start; min-width: 0 }
+.film.seen { opacity: .5 }
+.poster { grid-row: span 3; width: 88px; aspect-ratio: 2/3; max-width: 100%; border-radius: 2px; background: var(--chip); object-fit: cover; display: block }
+.poster.blank { display: grid; place-items: center; font: 800 26px var(--display); color: var(--muted) }
+.meta { min-width: 0 }
+.film h3 { margin: 0; font: 600 19px/1.15 var(--body); text-wrap: balance }
+.byline { font: 12px/1.4 var(--mono); color: var(--muted); margin-top: 3px }
+.badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px }
+.badge { font: 500 10.5px/1 var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 4px 6px; border-radius: 2px;
+  border: 1px solid var(--ink); text-decoration: none; white-space: nowrap }
+.badge.cc { background: var(--ink); color: var(--paper) }
+.badge.syl { border-color: var(--accent); color: var(--accent) }
+.because { font-size: 13.5px; color: var(--muted); grid-column: 2; min-width: 0 }
+.because b { color: var(--ink); font-weight: 600 }
+.stars { color: var(--accent); letter-spacing: .04em; white-space: nowrap }
+.note { grid-column: 1 / -1; margin: 6px 0 0; font-size: 15px; min-width: 0 }
+.where { grid-column: 1 / -1; display: grid; gap: 6px; border-top: 1px dashed var(--rule); padding-top: 10px; margin-top: 6px }
+.where .row { gap: 5px }
+.k { font: 500 10.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); width: 48px; flex: none }
+.p { font: 12.5px/1 var(--mono); background: var(--chip); padding: 5px 7px; border-radius: 2px; text-decoration: none; white-space: nowrap }
+.p.have { background: var(--mine-bg); color: var(--mine); font-weight: 500; box-shadow: inset 0 0 0 1px var(--mine) }
+.none { font: 12.5px var(--mono); color: var(--muted) }
+.foot { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 8px; align-items: center; margin-top: 4px }
+.jw { font: 12px var(--mono); color: var(--muted) }
+.seen-btn { font: 500 12px var(--mono); background: none; border: 1px solid var(--rule); color: var(--ink); padding: 5px 8px; border-radius: 3px; cursor: pointer }
+.film.seen .seen-btn { background: var(--ink); color: var(--paper) }
+.empty { padding: 28px 0; color: var(--muted); font-style: italic }
+
+footer.colophon { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--ink); display: grid; gap: 12px; font-size: 14px; color: var(--muted) }
+footer h4 { margin: 0; font: 800 18px var(--display); text-transform: uppercase; color: var(--ink); letter-spacing: .04em }
+footer ul { margin: 0; padding-left: 18px; columns: 2 280px; column-gap: 28px }
+footer li { break-inside: avoid; margin-bottom: 4px }
+@media (prefers-reduced-motion: no-preference) { .film { transition: opacity .2s } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="course">Independent Study · Fall 2026 · Instructor: Claude · Student: @onebeerjt</div>
+    <h1>JT's <em>Syllabus</em></h1>
+    <p class="lede">A watchlist built from your 130 Letterboxd diary entries, the Criterion Collection, and screening lists from seven university film courses. Every pick says which film you logged led to it and where it's streaming right now.</p>
+    <div class="facts" id="facts"></div>
+    <div class="refresh"><span id="checked"></span><a id="refresh" class="tog" target="_blank" rel="noopener">Refresh streaming now ↗</a></div>
+  </header>
+
+  <div class="desk" role="region" aria-label="Filters">
+    <div class="row" id="units"><span class="label">Unit</span></div>
+    <div class="row" id="filters"><span class="label">Show</span><span class="count" id="count"></span></div>
+    <details id="svc-wrap" open>
+      <summary>My services ▾ <span id="svc-hint">(tap the ones you pay for)</span></summary>
+      <div class="row" id="services" style="margin-top:8px"></div>
+    </details>
+  </div>
+
+  <main id="main"></main>
+
+  <footer class="colophon">
+    <h4>Course sources</h4>
+    <ul id="sources"></ul>
+    <p id="fresh"></p>
+  </footer>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+
+const UNITS = [
+  ["noir", "Unit 1", "Classic Noir", "Where the femme fatales, double-crosses and wet streets of Body Heat and L.A. Confidential came from. Taught in noir courses at Graz and Boğaziçi."],
+  ["newhollywood", "Unit 2", "New Hollywood", "1967–1980, the era of your two five-star Godfathers and Taxi Driver. Mostly from Georgia Tech's New Hollywood Now syllabus."],
+  ["neonoir", "Unit 3", "Neo-Noir & Crime", "Your diary leans hard into 70s–80s crime: The Conversation, Body Heat, Blood Simple, Rumble Fish. This unit goes deeper."],
+  ["italian", "Unit 4", "Italian Cinema", "You gave four-star ratings to six Fellinis. These come largely from John Cabot University's Italian Cinema course."],
+  ["world", "Unit 5", "World Cinema", "From the Columbia and Penn survey courses, plus Criterion staples matched to your favorites."],
+  ["now", "Unit 6", "Modern Auteurs", "Her, Lost in Translation, Ex Machina and The Lobster are all five stars for you. These are their close relatives."],
+];
+// JustWatch package ids grouped into the services people actually subscribe to.
+const SERVICES = [
+  ["netflix", "Netflix", ["netflix", "netflixbasicwithads"]],
+  ["max", "HBO Max", ["max", "amazonhbomax"]],
+  ["prime", "Prime Video", ["amazonprime", "amazonprimevideowithads"]],
+  ["criterion", "Criterion Channel", ["criterionchannel"]],
+  ["hulu", "Hulu", ["hulu"]],
+  ["paramount", "Paramount+", ["paramountplus", "paramountplusessential", "paramountpluspremium", "amazonparamountplus", "rokuchannelparamountplus"]],
+  ["peacock", "Peacock", ["peacocktv", "peacocktvpremium"]],
+  ["mgm", "MGM+", ["epix", "amazonepix", "rokuchannelepix"]],
+  ["amc", "AMC+", ["amcplus", "amazonamcplus", "rokuchannelamcplus"]],
+  ["kanopy", "Kanopy (library)", ["kanopy"]],
+  ["hoopla", "Hoopla (library)", ["hoopla"]],
+  ["free", "Free with ads", ["tubitv", "rokuchannel", "plutotv", "plex", "plexplayer", "justwatchplexchannel", "youtubefree", "vudufree", "amazonimdbtv", "xumoplay", "fawesometv", "shoutfactorytv", "distrotv", "publicdomainmovies", "justwatchtv", "ottstudioplayer"]],
+];
+const SVC_OF = {}; SERVICES.forEach(([k, , ids]) => ids.forEach(id => SVC_OF[id] = k));
+const SVC_NAME = Object.fromEntries(SERVICES.map(([k, n]) => [k, n]));
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("syl:" + k); return v ? JSON.parse(v) : d } catch { return d } },
+  set(k, v) { try { localStorage.setItem("syl:" + k, JSON.stringify(v)) } catch {} },
+};
+const state = {
+  unit: store.get("unit", "all"),
+  mine: new Set(store.get("mine", [])),
+  seen: new Set(store.get("seen", [])),
+  onlyMine: store.get("onlyMine", false),
+  onlyCC: false, onlySyl: false, hideSeen: false,
+};
+
+const diaryByTitle = {};
+DATA.diary.forEach(d => { const cur = diaryByTitle[d.t]; if (!cur || d.r > cur.r) diaryByTitle[d.t] = d });
+const stars = r => "★".repeat(Math.floor(r)) + (r % 1 ? "½" : "");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const key = p => `${p.t} (${p.y})`;
+
+// Rank: how much you loved the film that led here, how many courses teach it, and Criterion status.
+DATA.picks.forEach(p => {
+  const b = diaryByTitle[p.because];
+  p.score = (b ? b.r : 3) * 2 + p.src.length * 1.5 + (p.cc ? 1 : 0);
+  p.av = DATA.avail.titles[key(p)] || { offers: [] };
+  // Group offers by service; anything not in SERVICES keeps its own name.
+  const groups = { stream: {}, free: {}, rent: {}, buy: {} };
+  p.av.offers.forEach(o => {
+    const svc = SVC_OF[o.id];
+    const kind = svc === "free" ? "free" : o.kind;
+    // Subscriptions collapse to one chip per service; free and rental chips keep the store's own name.
+    const byStore = kind !== "stream";
+    const k = byStore ? o.id : (svc || o.id);
+    const name = byStore ? o.name.replace(/ ?(Amazon Channel|Player|Channel)$/, "") : (SVC_NAME[svc] || o.name);
+    const g = groups[kind];
+    if (!g[k] || (o.price && (!g[k].price || parseFloat(o.price.replace(/[^0-9.]/g, "")) < parseFloat(g[k].price.replace(/[^0-9.]/g, "")))))
+      g[k] = { name, url: o.url, svc, price: o.price };
+  });
+  p.groups = groups;
+  p.svcs = new Set([...Object.values(groups.stream), ...Object.values(groups.free)].map(o => o.svc).filter(Boolean));
+});
+DATA.picks.sort((a, b) => b.score - a.score);
+
+function canWatch(p) { return [...p.svcs].some(s => state.mine.has(s)) }
+
+function chip(o, kind) {
+  const have = kind !== "rent" && kind !== "buy" && o.svc && state.mine.has(o.svc);
+  const label = esc(o.name) + (kind === "rent" || kind === "buy" ? (o.price ? " " + esc(o.price) : "") : "");
+  return `<a class="p${have ? " have" : ""}" href="${esc(o.url)}" target="_blank" rel="noopener">${label}</a>`;
+}
+function cheapest(list) {
+  const priced = list.filter(o => o.price).sort((a, b) => parseFloat(a.price.replace(/[^0-9.]/g, "")) - parseFloat(b.price.replace(/[^0-9.]/g, "")));
+  return (priced.length ? priced : list).slice(0, 3);
+}
+
+function card(p) {
+  const b = diaryByTitle[p.because];
+  const seen = state.seen.has(key(p));
+  const syl = p.src.map(s => `<a class="badge syl" href="${esc(DATA.sources[s].url)}" target="_blank" rel="noopener" title="${esc(DATA.sources[s].name)}">${esc(DATA.sources[s].school)}</a>`).join("");
+  const g = p.groups;
+  const stream = Object.values(g.stream), free = Object.values(g.free), rent = Object.values(g.rent);
+  const lines = [];
+  if (stream.length) lines.push(`<div class="row"><span class="k">Stream</span>${stream.map(o => chip(o, "stream")).join("")}</div>`);
+  if (free.length) lines.push(`<div class="row"><span class="k">Free</span>${free.slice(0, 4).map(o => chip(o, "free")).join("")}</div>`);
+  if (rent.length) lines.push(`<div class="row"><span class="k">Rent</span>${cheapest(rent).map(o => chip(o, "rent")).join("")}</div>`);
+  if (!lines.length) lines.push(`<span class="none">Not streaming in the US right now.</span>`);
+  const img = p.av.poster ? `<img class="poster" src="${p.av.poster}" alt="" loading="lazy">` : `<div class="poster blank" aria-hidden="true">${esc(p.t[0])}</div>`;
+  return `<article class="film${seen ? " seen" : ""}" data-key="${esc(key(p))}">
+    ${img}
+    <div class="meta">
+      <h3>${esc(p.t)}</h3>
+      <div class="byline">${p.y} · ${esc(p.d)}</div>
+      <div class="badges">${p.cc ? `<span class="badge cc">Criterion #${p.cc}</span>` : ""}${syl}</div>
+    </div>
+    <div class="because">Because you gave <b>${esc(p.because)}</b>${b ? ` <span class="stars">${stars(b.r)}</span>` : ""}</div>
+    <p class="note">${esc(p.note)}</p>
+    <div class="where">${lines.join("")}</div>
+    <div class="foot">
+      ${p.av.jw ? `<a class="jw" href="${esc(p.av.jw)}" target="_blank" rel="noopener">All options on JustWatch ↗</a>` : "<span></span>"}
+      <button class="seen-btn" type="button" aria-pressed="${seen}">${seen ? "✓ Watched" : "Mark watched"}</button>
+    </div>
+  </article>`;
+}
+
+function visible(p) {
+  if (state.onlyMine && state.mine.size && !canWatch(p)) return false;
+  if (state.onlyCC && !p.cc) return false;
+  if (state.onlySyl && !p.src.length) return false;
+  if (state.hideSeen && state.seen.has(key(p))) return false;
+  return true;
+}
+
+function render() {
+  const main = document.getElementById("main");
+  let shown = 0, html = "";
+  for (const [id, no, name, blurb] of UNITS) {
+    if (state.unit !== "all" && state.unit !== id) continue;
+    const list = DATA.picks.filter(p => p.shelf === id && visible(p));
+    shown += list.length;
+    html += `<section class="unit" id="${id}"><div class="unit-head"><span class="unit-no">${no} · ${list.length} films</span><h2>${name}</h2><p class="unit-blurb">${blurb}</p></div>
+      ${list.length ? `<div class="grid">${list.map(card).join("")}</div>` : `<p class="empty">Nothing here matches your filters. Try adding a service or turning off a filter.</p>`}</section>`;
+  }
+  main.innerHTML = html;
+  document.getElementById("count").textContent = `${shown} of ${DATA.picks.length} picks`;
+  document.querySelectorAll("#units .tog").forEach(b => b.setAttribute("aria-pressed", b.dataset.u === state.unit));
+  document.querySelectorAll("#services .tog").forEach(b => b.setAttribute("aria-pressed", state.mine.has(b.dataset.s)));
+  document.querySelectorAll("#filters .tog").forEach(b => b.setAttribute("aria-pressed", !!state[b.dataset.f]));
+  document.getElementById("svc-hint").textContent = state.mine.size ? `(${[...state.mine].map(s => SVC_NAME[s]).join(", ")})` : "(tap the ones you pay for)";
+}
+
+function setup() {
+  const units = document.getElementById("units");
+  [["all", "All"], ...UNITS.map(u => [u[0], u[2]])].forEach(([u, n]) => {
+    units.insertAdjacentHTML("beforeend", `<button class="tog" type="button" data-u="${u}">${n}</button>`);
+  });
+  units.addEventListener("click", e => { const b = e.target.closest("[data-u]"); if (!b) return; state.unit = b.dataset.u; store.set("unit", state.unit); render() });
+
+  const filters = document.getElementById("filters"), count = document.getElementById("count");
+  [["onlyMine", "On my services"], ["onlyCC", "Criterion only"], ["onlySyl", "On a syllabus"], ["hideSeen", "Hide watched"]].forEach(([f, n]) => {
+    count.insertAdjacentHTML("beforebegin", `<button class="tog" type="button" data-f="${f}">${n}</button>`);
+  });
+  filters.addEventListener("click", e => { const b = e.target.closest("[data-f]"); if (!b) return; state[b.dataset.f] = !state[b.dataset.f]; if (b.dataset.f === "onlyMine") store.set("onlyMine", state.onlyMine); render() });
+
+  const svc = document.getElementById("services");
+  const counts = {}; DATA.picks.forEach(p => p.svcs.forEach(s => counts[s] = (counts[s] || 0) + 1));
+  SERVICES.forEach(([k, n]) => {
+    if (!counts[k] && k !== "hulu" && k !== "netflix") return;
+    svc.insertAdjacentHTML("beforeend", `<button class="tog svc" type="button" data-s="${k}">${n} <span style="opacity:.6">${counts[k] || 0}</span></button>`);
+  });
+  svc.addEventListener("click", e => { const b = e.target.closest("[data-s]"); if (!b) return; const s = b.dataset.s; state.mine.has(s) ? state.mine.delete(s) : state.mine.add(s); store.set("mine", [...state.mine]); render() });
+
+  document.getElementById("main").addEventListener("click", e => {
+    const b = e.target.closest(".seen-btn"); if (!b) return;
+    const k = b.closest(".film").dataset.key;
+    state.seen.has(k) ? state.seen.delete(k) : state.seen.add(k); store.set("seen", [...state.seen]); render();
+  });
+
+  const unique = new Set(DATA.diary.map(d => d.t + d.y)).size;
+  const ccSeen = new Set(DATA.diary.filter(d => d.cc).map(d => d.t)).size;
+  const streaming = DATA.picks.filter(p => p.svcs.size).length;
+  document.getElementById("facts").innerHTML = [
+    `<span><b>${DATA.diary.length}</b> diary entries · <b>${unique}</b> films</span>`,
+    `<span><b>${ccSeen}</b> of them already Criterion</span>`,
+    `<span><b>${DATA.picks.length}</b> picks</span>`,
+    `<span><b>${DATA.picks.filter(p => p.cc).length}</b> Criterion spines</span>`,
+    `<span><b>${Object.keys(DATA.sources).length}</b> syllabi</span>`,
+    `<span><b>${streaming}</b> streaming now</span>`,
+  ].join("");
+  document.getElementById("sources").innerHTML = Object.values(DATA.sources).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.school)}: ${esc(s.name)}</a></li>`).join("")
+    + `<li><a href="https://www.criterion.com/shop/browse/list?sort=spine_number" target="_blank" rel="noopener">The Criterion Collection: ${DATA.ccTotal.toLocaleString()} titles</a></li>`;
+  const when = new Date(DATA.avail.fetchedAt);
+  document.getElementById("fresh").textContent = `Streaming data from JustWatch (${DATA.avail.country}), checked ${when.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}. Services change their catalogs often, so tap through to confirm. Diary from letterboxd.com/onebeerjt.`;
+  document.getElementById("checked").textContent = `Streaming checked ${when.toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}`;
+  const refresh = document.getElementById("refresh");
+  refresh.href = `https://github.com/${DATA.repo}/actions/workflows/refresh.yml`;
+  refresh.title = "Opens GitHub. Press \"Run workflow\"; the site updates about a minute later.";
+  if (location.hash && UNITS.some(u => u[0] === location.hash.slice(1))) state.unit = location.hash.slice(1);
+  render();
+}
+setup();
+</script>
